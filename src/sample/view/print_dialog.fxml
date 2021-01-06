@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="279.0" maxWidth="274" minHeight="279.0" minWidth="274" prefHeight="279.0" prefWidth="274.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.PrintDialogController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="210.0" prefWidth="274.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label contentDisplay="RIGHT" text="От">
+                     <graphic>
+                        <TextField fx:id="fromField" prefHeight="25.0" prefWidth="50.0" text="1" />
+                     </graphic>
+                  </Label>
+                  <Label contentDisplay="RIGHT" text="До">
+                     <graphic>
+                        <TextField fx:id="toField" prefHeight="25.0" prefWidth="50.0" text="MAX" />
+                     </graphic>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label contentDisplay="RIGHT" text="Локация" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="choseBox" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label contentDisplay="RIGHT" graphicTextGap="31.0" text="Принтери">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="choseBoxPrinter" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="12.0" />
+                     </HBox.margin></ChoiceBox>
+               </children>
+            </HBox>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="10.0" vgap="10.0">
+               <children>
+                  <Button cancelButton="true" mnemonicParsing="false" onAction="#cancel" text="Отменить">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button defaultButton="true" mnemonicParsing="false" onAction="#printSomething" text="Печать">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </FlowPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

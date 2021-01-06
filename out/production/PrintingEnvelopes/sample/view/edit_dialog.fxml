@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="444.0" spacing="2.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.EditDialogController">
+    <children>
+        <Label fx:id="idLabel" text="Запись #">
+            <font>
+                <Font size="20.0" />
+            </font></Label>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+              <Label contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Имя">
+                  <opaqueInsets>
+                      <Insets />
+                  </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+              </Label>
+                <TextField fx:id="nameField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="250.0">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+                </TextField>
+         </children></HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+              <Label contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Улица">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+              </Label>
+                <TextField fx:id="streetField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="250.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children></HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+              <Label contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Район">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+              </Label>
+                <TextField fx:id="districtField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="250.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children></HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+              <Label contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Город">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+              </Label>
+                <TextField fx:id="cityField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="250.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children></HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+              <Label contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Область">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+              </Label>
+                <TextField fx:id="regionField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="250.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children></HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+              <Label contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Индекс">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+              </Label>
+                <TextField fx:id="ZIPCodeField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="250.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children></HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+             <Label contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Локация" textAlignment="CENTER" wrapText="true">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+              </Label>
+                <ChoiceBox fx:id="printFormatChoice" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="250.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </ChoiceBox>
+         </children></HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+              <Label contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Страна">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+              </Label>
+                <TextField fx:id="countryField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="250.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children></HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+              <Label contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Телефон">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+              </Label>
+                <TextField fx:id="phoneField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="250.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children></HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="154.0" prefWidth="401.0">
+         <children>
+              <Label contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="100.0" text="Плательщик">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+              </Label>
+                <TextArea fx:id="payerArea" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="250.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextArea>
+         </children></HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+              <Label contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Количество">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+              </Label>
+                <TextField fx:id="leafCountField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="250.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children></HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+              <Label contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Дата начала">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+              </Label>
+                <DatePicker fx:id="subscriptionStartDatePicker" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="250.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </DatePicker>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+              <Label contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" text="Дата конца">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+              </Label>
+                <DatePicker fx:id="subscriptionFinishDatePicker" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="250.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </DatePicker>
+         </children>
+      </HBox>
+        <FlowPane alignment="CENTER" hgap="40.0" prefHeight="85.0" prefWidth="380.0" vgap="10.0">
+            <children>
+                <Button fx:id="cancelButton" cancelButton="true" mnemonicParsing="false" onAction="#close" text="Отменить" textAlignment="CENTER" />
+                <Button fx:id="removeButton" mnemonicParsing="false" onAction="#remove" text="Удалить">
+                    <FlowPane.margin>
+                        <Insets />
+                    </FlowPane.margin>
+                </Button>
+                <Button fx:id="storeButton" defaultButton="true" mnemonicParsing="false" onAction="#save" text="Сохранить">
+                    <FlowPane.margin>
+                        <Insets />
+                    </FlowPane.margin>
+                </Button>
+            <Button mnemonicParsing="false" onAction="#print" style="-fx-background-color: #CFCF00;" text="Напечатать" />
+            <ChoiceBox fx:id="printerChoiceBox" prefWidth="150.0" />
+            </children>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </FlowPane>
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</VBox>
